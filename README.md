@@ -11,6 +11,7 @@ Plain HTML, CSS, and JavaScript. No build step, no dependencies, no framework â€
 index.html                  markup and all content
 styles.css                  design tokens, layout, light/dark themes
 script.js                   theme toggle, nav, scroll reveals, hero ink trail
+assets/emirhan.jpg          hero portrait (cropped square, 720Ã—720)
 assets/icons/               App Store icons for the 7 published apps
 Emirhan_Simsek_Resume.pdf   linked from the hero and the contact section
 ```

@@ -10,3 +10,6 @@ desktop.ini
 
 # Logs
 *.log
+
+# Unprocessed photo source — the cropped version lives in assets/emirhan.jpg
+IMG_4015.JPG.jpeg
