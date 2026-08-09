@@ -294,14 +294,11 @@ svg {
 @media (min-width: 1140px) {
   .hero-portrait {
     position: absolute;
-    top: 50%;
+    top: 0;                   /* top edge level with the eyebrow line */
     right: 24px;              /* lines up with the .wrap content edge */
     z-index: 1;
     width: min(17vw, 216px);
     margin: 0;
-    /* Lifted off centre so it sits with the name and lede rather than being
-       dragged down by the stats row at the bottom of the hero. */
-    transform: translateY(calc(-50% - 72px));
   }
   .hero-portrait img { border-radius: 18px; }
 }
