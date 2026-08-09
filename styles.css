@@ -301,8 +301,8 @@ svg {
     margin: 0;
     /* `translate`, not `transform`: .reveal.is-visible sets `transform: none`
        at a higher specificity, which would silently cancel the centering.
-       The extra 56px lifts it above dead centre, level with the name. */
-    translate: 0 calc(-50% - 56px);
+       The extra 28px lifts it just above dead centre. */
+    translate: 0 calc(-50% - 28px);
   }
   .hero-portrait img { border-radius: 18px; }
 }
