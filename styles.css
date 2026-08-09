@@ -276,7 +276,7 @@ svg {
    absolutely positioned and out of flow, so the text keeps exactly the position
    and measure it had. Below that there is no room beside the copy, so it falls
    back into normal flow — last in the hero, after the stats, never above the
-   text. The image is shown whole: no object-fit, no aspect-ratio, no cropping. */
+   text. The asset is already cropped to 4:5, so no object-fit is needed here. */
 .hero-portrait {
   margin: 38px 0 0;
   width: clamp(148px, 34vw, 196px);
