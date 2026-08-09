@@ -272,37 +272,36 @@ svg {
 
 .hero-inner { position: relative; }
 
-/* Portrait fills the empty space to the right of the copy. Above 1080px it is
-   taken out of flow entirely, so the text keeps exactly the position and
-   measure it had before the photo existed. Below that there is no room beside
-   the copy, so it returns to normal flow and stacks above it. */
+/* Portrait sits in the empty space to the right of the copy. Above 1140px it is
+   absolutely positioned and out of flow, so the text keeps exactly the position
+   and measure it had. Below that there is no room beside the copy, so it falls
+   back into normal flow — last in the hero, after the stats, never above the
+   text. The image is shown whole: no object-fit, no aspect-ratio, no cropping. */
 .hero-portrait {
-  margin: 0 0 34px;
-  width: clamp(132px, 32vw, 184px);
+  margin: 38px 0 0;
+  width: clamp(148px, 34vw, 196px);
 }
 .hero-portrait img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-lg);
 }
 
-/* 1140px is where the wrap stops growing, which leaves a dependable ~70px gap
-   between the photo and the widest text row (the stats) at every size above it. */
+/* 1140px is where the wrap stops growing, so the gap to the widest text row
+   (the stats) stays dependable at every size above it. */
 @media (min-width: 1140px) {
   .hero-portrait {
     position: absolute;
     top: 50%;
     right: 24px;              /* lines up with the .wrap content edge */
     z-index: 1;
-    width: min(26vw, 300px);
+    width: min(17vw, 216px);
     margin: 0;
     transform: translateY(-50%);
   }
-  .hero-portrait img { border-radius: 26px; }
+  .hero-portrait img { border-radius: 18px; }
 }
 
 .eyebrow {
