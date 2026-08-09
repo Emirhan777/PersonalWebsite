@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emirhan Şimşek — Computer &amp; Industrial Engineering</title>
+<meta name="description" content="Emirhan Şimşek — Computer Engineering &amp; Industrial Engineering student at Boğaziçi University. Machine learning research, optimization, and 7 published iOS apps that turn motion into an interface.">
+<meta name="author" content="Emirhan Şimşek">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Emirhan Şimşek">
+<meta property="og:description" content="Computer &amp; Industrial Engineering at Boğaziçi University. ML research, optimization, and 7 published iOS apps.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0d12'/%3E%3Cpath d='M28 72 C 40 30, 60 30, 72 72' stroke='%235b9dff' stroke-width='9' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Emirhan Şimşek</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#work">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2Z"/></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="wrap hero-inner">
+      <p class="eyebrow reveal">Istanbul, Turkey</p>
+
+      <h1 class="hero-title reveal">
+        Emirhan&nbsp;Şimşek
+      </h1>
+
+      <p class="hero-lede reveal">
+        Computer Engineering &amp; Industrial Engineering double major at
+        <strong>Boğaziçi University</strong>. I work on machine learning and
+        optimization research — and I ship
+        <a class="inline-link" href="#apps">seven iOS apps</a>
+        built on one idea: your movement is the interface.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#apps">
+          View the apps
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="Emirhan_Simsek_Resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+          Résumé (PDF)
+        </a>
+      </div>
+
+      <dl class="hero-stats reveal">
+        <div><dt>Apps on the App Store</dt><dd>7</dd></div>
+        <div><dt>Research labs</dt><dd>2</dd></div>
+        <div><dt>Internships at ICRON</dt><dd>2</dd></div>
+        <div><dt>Exchange</dt><dd>TUM</dd></div>
+      </dl>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ================= APPS ================= -->
+  <section class="section" id="apps">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">App Store</p>
+        <h2>Seven published apps</h2>
+        <p class="section-lede">
+          It started in 2022 with a program that read my phone's sensors and wrote out the
+          words I drew in the air. That experiment became a family of apps where motion,
+          the camera, or a graph — never a button — is the control surface.
+        </p>
+      </header>
+
+      <ul class="app-grid">
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/antcolony-graph-theory/id6758405149" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/antcolony.jpg" alt="AntColony – Graph Theory app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>AntColony <span class="app-sub">Graph Theory</span></h3>
+              <p class="app-cat">Games</p>
+              <p class="app-desc">
+                Ants walk a graph, drop pheromone, and the trails evaporate. With no central
+                control, the colony converges on the shortest path to food — emergence you can
+                watch and reshape live.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/pendraw/id6756569723" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/pendraw.jpg" alt="PenDraw app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>PenDraw</h3>
+              <p class="app-cat">Graphics &amp; Design</p>
+              <p class="app-desc">
+                Turns the phone itself into a pen. Motion sensors track how you move the device
+                and render the stroke in real time on a clean, distraction-free canvas.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/penfinger/id6757021735" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/penfinger.jpg" alt="PenFinger app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>PenFinger</h3>
+              <p class="app-cat">Entertainment</p>
+              <p class="app-desc">
+                Draws with your fingertip in mid-air. The camera tracks your hand and converts
+                real-world movement into 2D strokes — processed entirely on device.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/pendraw-maze/id6756860055" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/pendraw-maze.jpg" alt="PenDraw – Maze app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>PenDraw <span class="app-sub">Maze</span></h3>
+              <p class="app-cat">Entertainment</p>
+              <p class="app-desc">
+                The pen, turned into a game. Steer a continuous line through a maze using
+                nothing but the tilt of your hand — no buttons, no touch controls.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/airviolin/id6757504318" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/airviolin.jpg" alt="AirViolin app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>AirViolin</h3>
+              <p class="app-cat">Music</p>
+              <p class="app-desc">
+                Hold the phone like a bow. Pitch angle selects the note, bowing speed sets the
+                volume, and stopping your arm stops the sound instantly.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/airdrums-epic/id6757706237" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/airdrums.jpg" alt="AirDrums – Epic app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>AirDrums <span class="app-sub">Epic</span></h3>
+              <p class="app-cat">Music</p>
+              <p class="app-desc">
+                Four drum zones mapped to rotation, struck by swinging your arm down. Hit
+                harder and it plays louder — velocity-sensitive audio from raw sensor data.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="app-card reveal">
+          <a href="https://apps.apple.com/tr/app/pentimer/id6757347542" target="_blank" rel="noopener">
+            <img class="app-icon" src="assets/icons/pentimer.jpg" alt="PenTimer app icon" width="512" height="512" loading="lazy" decoding="async">
+            <div class="app-body">
+              <h3>PenTimer</h3>
+              <p class="app-cat">Productivity</p>
+              <p class="app-desc">
+                A 25/5 focus timer that writes every finished session into Apple Calendar, so
+                your real focused hours show up as blocks on a daily timeline.
+              </p>
+              <span class="app-link">App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="apps-footnote reveal">
+        All seven are free, with no accounts and no data collection.
+        <a class="inline-link" href="https://apps.apple.com/tr/developer/emirhan-simsek/id1861446793" target="_blank" rel="noopener">
+          See the full developer page →
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH & EXPERIENCE ================= -->
+  <section class="section section-alt" id="work">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Research &amp; Industry</p>
+        <h2>Where I've been working</h2>
+      </header>
+
+      <ol class="timeline">
+
+        <li class="tl-item reveal">
+          <div class="tl-date">Jan 2026 —</div>
+          <div class="tl-body">
+            <h3>Vehicle Routing with Time Intervals</h3>
+            <p class="tl-org">Research · Boğaziçi University</p>
+            <p>
+              Developing mathematical models for a Vehicle Routing Problem with time intervals
+              and writing the solver for them. Aiming to publish at an international conference.
+            </p>
+            <ul class="tags"><li>Optimization</li><li>Mathematical Modeling</li><li>OR</li></ul>
+          </div>
+        </li>
+
+        <li class="tl-item reveal">
+          <div class="tl-date">Aug 2025</div>
+          <div class="tl-body">
+            <h3>Next-Node Prediction for an Internal Tool</h3>
+            <p class="tl-org">Internship · ICRON</p>
+            <p>
+              Built a next-token-style prediction system with Transformers and majority voting.
+              Compared several embedders — BERT, FastText, MiniLM — and made the final
+              predictions from cosine similarity between embedded vectors.
+            </p>
+            <ul class="tags"><li>Transformers</li><li>BERT</li><li>FastText</li><li>MiniLM</li><li>Embeddings</li></ul>
+          </div>
+        </li>
+
+        <li class="tl-item reveal">
+          <div class="tl-date">Jun 2025</div>
+          <div class="tl-body">
+            <h3>Multimodal Speech &amp; Sketch Interfaces</h3>
+            <p class="tl-org">Research · Koç University IUI Lab</p>
+            <p>
+              Built an interface that takes a sketch plus voice commands and animates the
+              drawing. My first real research experience — and the one that taught me how to
+              read a stack of academic papers properly.
+            </p>
+            <ul class="tags"><li>HCI</li><li>Multimodal Input</li><li>Speech</li></ul>
+          </div>
+        </li>
+
+        <li class="tl-item reveal">
+          <div class="tl-date">Jan 2025</div>
+          <div class="tl-body">
+            <h3>556 Time Series, Forecasted</h3>
+            <p class="tl-org">Internship · ICRON</p>
+            <p>
+              Ran N-BEATS and N-HiTS models across 556 parallel time series with Python's Darts
+              library. Owned the whole pipeline: icdb → CSV → pandas → Darts TimeSeries, table
+              merges, scaling, and hyperparameter tuning. Presented the reasoning behind each
+              decision, including where overfitting appeared and how it was mitigated.
+            </p>
+            <ul class="tags"><li>Darts</li><li>N-BEATS</li><li>N-HiTS</li><li>pandas</li><li>Forecasting</li></ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+        <p class="section-lede">
+          A decade of building things, from an Arduino car that started it all to neural
+          networks written by hand in NumPy.
+        </p>
+      </header>
+
+      <div class="proj-grid">
+
+        <article class="proj-card reveal">
+          <span class="proj-year">2024</span>
+          <h3>Deep Learning at TUM</h3>
+          <p>
+            Wrote neural networks by hand in NumPy — defining every function, building,
+            training, and predicting — before moving to PyTorch. Building them by hand is what
+            made the mechanics click.
+          </p>
+          <p class="proj-detail">
+            Feature-extractor + classifier pairs for NLP, autoencoders, and CNNs; facial
+            keypoint detection and semantic segmentation. Studied RNNs, LSTMs, attention, and
+            Transformers, with a pass over GNNs, VAEs, GANs, and diffusion models.
+          </p>
+          <ul class="tags"><li>PyTorch</li><li>NumPy</li><li>CNNs</li><li>Transformers</li></ul>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-year">2024</span>
+          <h3>Data Structures &amp; Algorithms</h3>
+          <p>
+            An AVL tree that ranks and traverses nodes representing people by attribute; a hash
+            map allocating employees to positions under constraints; and a music shuffler built
+            on heaps that orders songs by score.
+          </p>
+          <p class="proj-detail">
+            These ran on thousands of lines of input. Taking complexity analysis seriously took
+            runtime from hours down to under a minute.
+          </p>
+          <ul class="tags"><li>Java</li><li>AVL Trees</li><li>Heaps</li><li>Hashing</li></ul>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-year">2023</span>
+          <h3>OOP &amp; Applied Algorithms</h3>
+          <p>
+            A route finder over the Istanbul metro network using depth-first search with the
+            path visualized; a Bubble Trouble-style game built on inheritance; and a lake-filling
+            and labeling program using breadth-first search.
+          </p>
+          <ul class="tags"><li>Java</li><li>DFS / BFS</li><li>Inheritance</li></ul>
+        </article>
+
+        <article class="proj-card reveal proj-featured">
+          <span class="proj-year">2022</span>
+          <h3>The phone that became a pen</h3>
+          <p>
+            A program that reads smartphone sensor data, visualizes the movement of the phone,
+            and outputs the words written in the air — including word recognition.
+          </p>
+          <p class="proj-detail">
+            I turned it into a published app. Everything in the
+            <a class="inline-link" href="#apps">Pen and Air series</a> traces back to this.
+          </p>
+          <ul class="tags"><li>Sensors</li><li>Gesture Recognition</li><li>iOS</li></ul>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-year">2021</span>
+          <h3>Product Categorization Systems</h3>
+          <p>
+            Proposed a new method for categorizing and listing products, with an accompanying
+            website design. Reviewed the UN's <em>International Standard Industrial
+            Classification of All Economic Activities, Rev. 4</em> (pp. 96–160) and EU product
+            standards, alongside Garvin's <em>Managing Quality</em>.
+          </p>
+          <ul class="tags"><li>Research</li><li>Taxonomy</li><li>Standards</li></ul>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-year">2018</span>
+          <h3>Composting &amp; Waste Management</h3>
+          <p>
+            Modelled a waste management system and designed composters for urban and rural use,
+            proving the proposed airflow through a manifold with a SolidWorks flow simulation.
+          </p>
+          <ul class="tags"><li>SolidWorks</li><li>Simulation</li><li>Sustainability</li></ul>
+        </article>
+
+        <article class="proj-card reveal">
+          <span class="proj-year">2017</span>
+          <h3>Bluetooth Arduino Car</h3>
+          <p>
+            Built a car with Arduino and drove it over Bluetooth from my phone. The project that
+            made me realize I like building things.
+          </p>
+          <ul class="tags"><li>Arduino</li><li>Bluetooth</li><li>Embedded</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / EDUCATION / SKILLS ================= -->
+  <section class="section section-alt" id="about">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>Background</h2>
+      </header>
+
+      <div class="about-grid">
+
+        <div class="about-main reveal">
+          <p class="about-text">
+            I'm a Computer Engineering and Industrial Engineering double major at Boğaziçi
+            University, graduating in January 2027. The combination is deliberate: computer
+            engineering gives me the models and the code, industrial engineering gives me the
+            optimization and the systems thinking. Most of what I enjoy sits where those two
+            meet — routing problems, forecasting pipelines, and interfaces that read the
+            physical world.
+          </p>
+          <p class="about-text">
+            I spent an Erasmus exchange at the Technical University of Munich studying
+            Informatik, where I took Introduction to Deep Learning, Augmented Reality,
+            Entrepreneurship, and German B2.1. Outside coursework I ship apps, because the
+            fastest way I know to understand something is to build a working version of it.
+          </p>
+
+          <div class="quality-list">
+            <div class="quality">
+              <h4>Collaboration</h4>
+              <p>Comfortable working inside a team and presenting the reasoning behind decisions.</p>
+            </div>
+            <div class="quality">
+              <h4>Deep focus</h4>
+              <p>Able to stay locked onto a single hard problem for hours at a time.</p>
+            </div>
+            <div class="quality">
+              <h4>Fast ramp-up</h4>
+              <p>Learn and improve quickly to get to whatever a given task actually requires.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="about-side">
+
+          <div class="panel reveal">
+            <h3 class="panel-title">Education</h3>
+
+            <div class="edu">
+              <h4>Boğaziçi University</h4>
+              <p class="edu-meta">Computer Engineering &amp; Industrial Engineering — Double Major</p>
+              <p class="edu-meta">Istanbul, Turkey · Expected Jan 2027</p>
+              <p class="edu-gpa">GPA <strong>3.37</strong> / 4.00</p>
+            </div>
+
+            <div class="edu">
+              <h4>Technical University of Munich</h4>
+              <p class="edu-meta">Informatik — Erasmus Exchange · Aug 2024</p>
+              <p class="edu-meta">Intro to Deep Learning · Augmented Reality · Entrepreneurship · German B2.1</p>
+            </div>
+
+            <div class="edu">
+              <h4>Hüseyin Avni Sözen Anatolian High School</h4>
+              <p class="edu-gpa">GPA <strong>97.44</strong> / 100</p>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3 class="panel-title">Technical Skills</h3>
+            <ul class="tags tags-lg">
+              <li>Python</li><li>Java</li><li>ML Models</li><li>OOP</li>
+              <li>Data Structures &amp; Algorithms</li><li>R</li>
+              <li>Statistics</li><li>SQL</li><li>Excel</li>
+            </ul>
+          </div>
+
+          <div class="panel reveal">
+            <h3 class="panel-title">Languages</h3>
+            <ul class="lang-list">
+              <li><span>Turkish</span> <em>Native</em></li>
+              <li><span>English</span> <em>C2</em></li>
+              <li><span>German</span> <em>B1–B2</em></li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section section-contact" id="contact">
+    <div class="wrap">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something</h2>
+        <p class="contact-lede">
+          Open to internships, research collaborations, and interesting problems.
+          The fastest way to reach me is email.
+        </p>
+
+        <div class="contact-links">
+          <a class="contact-card" href="mailto:emirhan7simsek7@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+            <span class="cc-label">Email</span>
+            <span class="cc-value">emirhan7simsek7@gmail.com</span>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/emirhan-%C5%9Fim%C5%9Fek-717a93166/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.6v.05M11.5 16.5v-6M11.5 13c0-1.4 1-2.5 2.4-2.5s2.6 1 2.6 2.6v3.4"/></svg>
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-value">emirhan-şimşek</span>
+          </a>
+
+          <a class="contact-card" href="https://github.com/Emirhan777" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.5 1.5-4.5-2.5-6-3m12 5v-3.6a3.1 3.1 0 0 0-.9-2.4c2.9-.3 6-1.4 6-6.4a5 5 0 0 0-1.4-3.4 4.6 4.6 0 0 0-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.5 0C6.1 1.4 5 1.7 5 1.7a4.6 4.6 0 0 0-.1 3.5A5 5 0 0 0 3.5 8.6c0 5 3 6.1 5.9 6.4a3.1 3.1 0 0 0-.9 2.4V21"/></svg>
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">@Emirhan777</span>
+          </a>
+
+          <a class="contact-card" href="Emirhan_Simsek_Resume.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+            <span class="cc-label">Résumé</span>
+            <span class="cc-value">Download PDF</span>
+          </a>
+
+          <a class="contact-card" href="https://apps.apple.com/tr/developer/emirhan-simsek/id1861446793" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.8c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.6-1.9-1.5-.2-3 .9-3.8.9s-2-.9-3.2-.9c-1.7 0-3.2 1-4 2.5-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8s1.9.8 3.2.8 2.2-1.2 3-2.4a10 10 0 0 0 1.3-2.8c-.1 0-2.4-1-2.3-3.9Z"/><path d="M14.1 5.4A4.3 4.3 0 0 0 15.1 2a4.4 4.4 0 0 0-2.9 1.5 4.1 4.1 0 0 0-1 3.3 3.6 3.6 0 0 0 2.9-1.4Z"/></svg>
+            <span class="cc-label">App Store</span>
+            <span class="cc-value">7 apps</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Emirhan Şimşek</p>
+    <p class="footer-note">Istanbul, Turkey</p>
+    <a class="footer-top" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
