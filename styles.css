@@ -294,11 +294,14 @@ svg {
 @media (min-width: 1140px) {
   .hero-portrait {
     position: absolute;
-    top: 0;                   /* top edge level with the eyebrow line */
+    top: 50%;
     right: 24px;              /* lines up with the .wrap content edge */
     z-index: 1;
-    width: min(17vw, 216px);
+    width: min(23vw, 296px);
     margin: 0;
+    /* `translate`, not `transform`: .reveal.is-visible sets `transform: none`
+       at a higher specificity, which would silently cancel the centering. */
+    translate: 0 -50%;
   }
   .hero-portrait img { border-radius: 18px; }
 }
