@@ -10,15 +10,10 @@
   var root = document.documentElement;
   var toggle = document.getElementById('themeToggle');
 
-  try {
-    var saved = localStorage.getItem('theme');
-    if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
-  } catch (e) { /* storage blocked — fall back to system preference */ }
-
+  /* The inline script in <head> already applied any saved theme before paint.
+     Dark is the CSS default, so anything other than an explicit "light" is dark. */
   function currentTheme() {
-    var set = root.getAttribute('data-theme');
-    if (set) return set;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
   }
 
   if (toggle) {

@@ -2,68 +2,11 @@
    Emirhan Şimşek — personal site
    ============================================================ */
 
-/* ---------- Tokens: light is the base, dark overrides ---------- */
+/* ---------- Tokens: dark is the default, light is opt-in ----------
+   The system preference is deliberately not consulted — the site opens dark
+   for everyone, and the toggle (persisted in localStorage) is the only way
+   to switch to light. */
 :root {
-  --bg:            #f7f8fa;
-  --bg-alt:        #eef0f4;
-  --surface:       #ffffff;
-  --surface-2:     #f2f4f7;
-  --border:        #e0e3ea;
-  --border-strong: #cbd1dc;
-
-  --text:          #10141c;
-  --text-muted:    #5a6274;
-  --text-faint:    #868e9f;
-
-  --accent:        #2f6fed;
-  --accent-soft:   rgba(47, 111, 237, 0.10);
-  --accent-2:      #7a4dea;
-
-  --shadow-sm: 0 1px 2px rgba(16, 20, 28, .05), 0 2px 8px rgba(16, 20, 28, .04);
-  --shadow-md: 0 4px 12px rgba(16, 20, 28, .07), 0 12px 32px rgba(16, 20, 28, .07);
-  --shadow-lg: 0 12px 28px rgba(16, 20, 28, .10), 0 28px 64px rgba(16, 20, 28, .10);
-
-  --header-bg: rgba(247, 248, 250, .72);
-  --canvas-ink: 47, 111, 237;
-
-  --radius:    14px;
-  --radius-lg: 22px;
-  --wrap:      1140px;
-
-  --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          "Inter", "Helvetica Neue", Arial, sans-serif;
-  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-
-  --ease: cubic-bezier(.22, .61, .36, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg:            #0a0c11;
-    --bg-alt:        #0e1118;
-    --surface:       #12161f;
-    --surface-2:     #171c27;
-    --border:        #222836;
-    --border-strong: #313a4d;
-
-    --text:          #eef1f7;
-    --text-muted:    #a2abbd;
-    --text-faint:    #737d92;
-
-    --accent:        #5b9dff;
-    --accent-soft:   rgba(91, 157, 255, 0.13);
-    --accent-2:      #a486ff;
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .35), 0 2px 8px rgba(0, 0, 0, .28);
-    --shadow-md: 0 4px 14px rgba(0, 0, 0, .40), 0 14px 36px rgba(0, 0, 0, .36);
-    --shadow-lg: 0 14px 32px rgba(0, 0, 0, .48), 0 30px 70px rgba(0, 0, 0, .45);
-
-    --header-bg: rgba(10, 12, 17, .72);
-    --canvas-ink: 91, 157, 255;
-  }
-}
-
-:root[data-theme="dark"] {
   --bg:            #0a0c11;
   --bg-alt:        #0e1118;
   --surface:       #12161f;
@@ -85,6 +28,40 @@
 
   --header-bg: rgba(10, 12, 17, .72);
   --canvas-ink: 91, 157, 255;
+
+  --radius:    14px;
+  --radius-lg: 22px;
+  --wrap:      1140px;
+
+  --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Inter", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+:root[data-theme="light"] {
+  --bg:            #f7f8fa;
+  --bg-alt:        #eef0f4;
+  --surface:       #ffffff;
+  --surface-2:     #f2f4f7;
+  --border:        #e0e3ea;
+  --border-strong: #cbd1dc;
+
+  --text:          #10141c;
+  --text-muted:    #5a6274;
+  --text-faint:    #868e9f;
+
+  --accent:        #2f6fed;
+  --accent-soft:   rgba(47, 111, 237, 0.10);
+  --accent-2:      #7a4dea;
+
+  --shadow-sm: 0 1px 2px rgba(16, 20, 28, .05), 0 2px 8px rgba(16, 20, 28, .04);
+  --shadow-md: 0 4px 12px rgba(16, 20, 28, .07), 0 12px 32px rgba(16, 20, 28, .07);
+  --shadow-lg: 0 12px 28px rgba(16, 20, 28, .10), 0 28px 64px rgba(16, 20, 28, .10);
+
+  --header-bg: rgba(247, 248, 250, .72);
+  --canvas-ink: 47, 111, 237;
 }
 
 /* ---------- Reset ---------- */
@@ -227,17 +204,12 @@ svg {
 }
 .theme-toggle:hover { color: var(--text); border-color: var(--border-strong); transform: translateY(-1px); }
 .theme-toggle svg { width: 18px; height: 18px; }
+
+/* Dark is the default, so the sun ("switch to light") shows until light is on. */
+.theme-toggle .i-sun  { display: block; }
 .theme-toggle .i-moon { display: none; }
-
-:root[data-theme="dark"] .theme-toggle .i-sun,
-:root[data-theme="light"] .theme-toggle .i-moon { display: block; }
-:root[data-theme="dark"] .theme-toggle .i-moon,
 :root[data-theme="light"] .theme-toggle .i-sun  { display: none; }
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .i-sun  { display: block; }
-  :root:not([data-theme="light"]) .theme-toggle .i-moon { display: none; }
-}
+:root[data-theme="light"] .theme-toggle .i-moon { display: block; }
 
 .nav-toggle {
   display: none;
@@ -299,6 +271,39 @@ svg {
 }
 
 .hero-inner { position: relative; }
+
+/* Portrait fills the empty space to the right of the copy. Above 1080px it is
+   taken out of flow entirely, so the text keeps exactly the position and
+   measure it had before the photo existed. Below that there is no room beside
+   the copy, so it returns to normal flow and stacks above it. */
+.hero-portrait {
+  margin: 0 0 34px;
+  width: clamp(132px, 32vw, 184px);
+}
+.hero-portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 1140px is where the wrap stops growing, which leaves a dependable ~70px gap
+   between the photo and the widest text row (the stats) at every size above it. */
+@media (min-width: 1140px) {
+  .hero-portrait {
+    position: absolute;
+    top: 50%;
+    right: 24px;              /* lines up with the .wrap content edge */
+    z-index: 1;
+    width: min(26vw, 300px);
+    margin: 0;
+    transform: translateY(-50%);
+  }
+  .hero-portrait img { border-radius: 26px; }
+}
 
 .eyebrow {
   display: inline-flex;

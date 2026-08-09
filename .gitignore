@@ -10,3 +10,7 @@ desktop.ini
 
 # Logs
 *.log
+
+# Unprocessed photo sources — the cropped version lives in assets/profile.jpg
+IMG_4015.JPG.jpeg
+profile.JPG.jpeg
